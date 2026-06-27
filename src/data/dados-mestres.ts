@@ -11,9 +11,9 @@ export const UNIDADES: Unidade[] = [
       'Endocrinologia','Gastroenterologia','Pneumologia','Reumatologia','Psiquiatria'],
   },
   {
-    id: 'u02', nome: 'Leste – Tatuapé', sigla: 'LST',
-    cidade: 'São Paulo', endereco: 'R. Tuiuti, 3200 – Tatuapé',
-    telefone: '(11) 3001-0002', coordenador: 'Dr. Marcelo Fontes',
+    id: 'u02', nome: 'Alto Tietê – Mogi das Cruzes', sigla: 'ATT',
+    cidade: 'Mogi das Cruzes', endereco: 'Av. Vereador Narciso Yague Guimarães, 1000 – Mogi das Cruzes',
+    telefone: '(11) 4791-0002', coordenador: 'Dr. Marcelo Fontes',
     cor: '#0f766e',
     especialidades: ['Clínica Médica','Cardiologia','Ortopedia','Ginecologia',
       'Pediatria','Dermatologia','Neurologia','Urologia'],
