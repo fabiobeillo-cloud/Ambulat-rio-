@@ -87,7 +87,7 @@ export const UNIDADES: Unidade[] = [
   },
   {
     id: 'u13', nome: 'UA Carlos Chagas HCC', sigla: 'HCC',
-    cidade: 'São Paulo', endereco: 'R. Martinico Prado, 26 – Higienópolis',
+    cidade: 'Guarulhos', endereco: 'R. Martinico Prado, 26 – Centro, Guarulhos',
     telefone: '(11) 3667-0013', coordenador: 'A confirmar',
     cor: '#7f1d1d',
     especialidades: ['Cirurgia Geral', 'Cirurgia Pediátrica', 'Cirurgia Vascular', 'Cirurgia de Cabeça e Pescoço', 'Clínica Médica', 'Dermatologia', 'Fisiatria', 'Ginecologia e Obstetrícia', 'Ginecologia/Obstetrícia', 'Ginecologista', 'Mamografia', 'Mastologia', 'Nefrologia', 'Neurologia', 'Nutrição', 'Ortopedia', 'Ortopedia e Traumatologia', 'Otorrino', 'Psicologia', 'Tomografia', 'Urologia'],
@@ -391,6 +391,127 @@ const SALAS_U12: Sala[] = [
   { id:'u12-s63', unidadeId:'u12', numero:'UP', nome:'Unidade Postural', tipo:'procedimento', especialidade:'Fisioterapia', andar:5 },
 ];
 
+// ─── Salas reais – u03 UA Santana ────────────────────────────────────────────
+const SALAS_U03: Sala[] = [
+  { id:'u03-s01', unidadeId:'u03', numero:'1', nome:'Sala 1', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s02', unidadeId:'u03', numero:'2', nome:'Sala 2', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s03', unidadeId:'u03', numero:'3', nome:'Sala 3', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s04', unidadeId:'u03', numero:'4', nome:'Sala 4', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s05', unidadeId:'u03', numero:'5', nome:'Sala 5', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s06', unidadeId:'u03', numero:'6', nome:'Sala 6', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s07', unidadeId:'u03', numero:'7', nome:'Sala 7', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s08', unidadeId:'u03', numero:'8', nome:'Sala 8', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s09', unidadeId:'u03', numero:'9', nome:'Sala 9', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s10', unidadeId:'u03', numero:'10', nome:'Sala 10', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u03-s11', unidadeId:'u03', numero:'101', nome:'Sala 101', tipo:'consultorio', especialidade:'Otorrinolaringologia', andar:1 },
+  { id:'u03-s12', unidadeId:'u03', numero:'102', nome:'Sala 102', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u03-s13', unidadeId:'u03', numero:'103', nome:'Sala 103', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u03-s14', unidadeId:'u03', numero:'104', nome:'Sala 104', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:1 },
+  { id:'u03-s15', unidadeId:'u03', numero:'105', nome:'Sala 105', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:1 },
+  { id:'u03-s16', unidadeId:'u03', numero:'106', nome:'Sala 106', tipo:'consultorio', especialidade:'Otorrinolaringologia', andar:1 },
+  { id:'u03-s17', unidadeId:'u03', numero:'201', nome:'Sala 201', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s18', unidadeId:'u03', numero:'202', nome:'Sala 202', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s19', unidadeId:'u03', numero:'203', nome:'Sala 203', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s20', unidadeId:'u03', numero:'204', nome:'Sala 204', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s21', unidadeId:'u03', numero:'205', nome:'Sala 205', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s22', unidadeId:'u03', numero:'206', nome:'Sala 206', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s23', unidadeId:'u03', numero:'207', nome:'Sala 207', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s24', unidadeId:'u03', numero:'208', nome:'Sala 208', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s25', unidadeId:'u03', numero:'209', nome:'Sala 209', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u03-s26', unidadeId:'u03', numero:'210', nome:'Sala 210', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u03-s27', unidadeId:'u03', numero:'211', nome:'Sala 211', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u03-s28', unidadeId:'u03', numero:'212', nome:'Sala 212', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u03-s29', unidadeId:'u03', numero:'301', nome:'Sala 301', tipo:'consultorio', especialidade:'Pediatria', andar:3 },
+  { id:'u03-s30', unidadeId:'u03', numero:'302', nome:'Sala 302', tipo:'consultorio', especialidade:'Pediatria', andar:3 },
+  { id:'u03-s31', unidadeId:'u03', numero:'303', nome:'Sala 303', tipo:'consultorio', especialidade:'Pediatria', andar:3 },
+  { id:'u03-s32', unidadeId:'u03', numero:'304', nome:'Sala 304', tipo:'consultorio', especialidade:'Pediatria', andar:3 },
+  { id:'u03-s33', unidadeId:'u03', numero:'305', nome:'Sala 305', tipo:'consultorio', especialidade:'Clínica Médica', andar:3 },
+  { id:'u03-s34', unidadeId:'u03', numero:'MAMOGRAFIA', nome:'Mamografia', tipo:'exame', especialidade:'Mamografia', andar:5 },
+  { id:'u03-s35', unidadeId:'u03', numero:'ULTRASSON', nome:'Ultrasson', tipo:'exame', especialidade:'Ultrassonografia', andar:5 },
+  { id:'u03-s36', unidadeId:'u03', numero:'TOMOGRAFIA', nome:'Tomografia', tipo:'exame', especialidade:'Tomografia', andar:5 },
+  { id:'u03-s37', unidadeId:'u03', numero:'ECOCARDIOGRAMA', nome:'Ecocardiograma', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u03-s38', unidadeId:'u03', numero:'TESTE ERGOMETRICO', nome:'Teste Ergométrico', tipo:'exame', especialidade:'Teste Ergométrico', andar:5 },
+  { id:'u03-s39', unidadeId:'u03', numero:'MAPA / HOLTER', nome:'Mapa / Holter', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u03-s40', unidadeId:'u03', numero:'RAIO X', nome:'Raio X', tipo:'exame', especialidade:'Diagnóstico por Imagem', andar:5 },
+];
+
+// ─── Salas reais – u06 UA Cubatão ────────────────────────────────────────────
+const SALAS_U06: Sala[] = [
+  { id:'u06-s01', unidadeId:'u06', numero:'1', nome:'Sala 1', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u06-s02', unidadeId:'u06', numero:'2', nome:'Sala 2', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u06-s03', unidadeId:'u06', numero:'3', nome:'Sala 3', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u06-s04', unidadeId:'u06', numero:'2', nome:'Sala 2', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u06-s05', unidadeId:'u06', numero:'3', nome:'Sala 3', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u06-s06', unidadeId:'u06', numero:'4', nome:'Sala 4', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u06-s07', unidadeId:'u06', numero:'5', nome:'Sala 5', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u06-s08', unidadeId:'u06', numero:'6', nome:'Sala 6', tipo:'consultorio', especialidade:'Fisioterapia', andar:1 },
+  { id:'u06-s09', unidadeId:'u06', numero:'7', nome:'Sala 7', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u06-s10', unidadeId:'u06', numero:'8', nome:'Sala 8', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u06-s11', unidadeId:'u06', numero:'9', nome:'Sala 9', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u06-s12', unidadeId:'u06', numero:'10', nome:'Sala 10', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u06-s13', unidadeId:'u06', numero:'11', nome:'Sala 11', tipo:'consultorio', especialidade:'Clínica Médica', andar:2 },
+  { id:'u06-s14', unidadeId:'u06', numero:'12', nome:'Sala 12', tipo:'exame', especialidade:'Ultrassonografia', andar:3 },
+  { id:'u06-s15', unidadeId:'u06', numero:'13', nome:'Sala 13', tipo:'consultorio', especialidade:'Clínica Médica', andar:3 },
+  { id:'u06-s16', unidadeId:'u06', numero:'14', nome:'Sala 14', tipo:'consultorio', especialidade:'Clínica Médica', andar:3 },
+  { id:'u06-s17', unidadeId:'u06', numero:'15', nome:'Sala 15', tipo:'consultorio', especialidade:'Clínica Médica', andar:3 },
+  { id:'u06-s18', unidadeId:'u06', numero:'16', nome:'Sala 16', tipo:'consultorio', especialidade:'Clínica Médica', andar:3 },
+  { id:'u06-s19', unidadeId:'u06', numero:'MAMOGRAFIA', nome:'Mamografia', tipo:'exame', especialidade:'Mamografia', andar:5 },
+  { id:'u06-s20', unidadeId:'u06', numero:'ULTRASSON', nome:'Ultrasson', tipo:'exame', especialidade:'Ultrassonografia', andar:5 },
+  { id:'u06-s21', unidadeId:'u06', numero:'TOMOGRAFIA', nome:'Tomografia', tipo:'exame', especialidade:'Tomografia', andar:5 },
+  { id:'u06-s22', unidadeId:'u06', numero:'ECOCARDIOGRAMA', nome:'Ecocardiograma', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u06-s23', unidadeId:'u06', numero:'TESTE ERGOMETRICO', nome:'Teste Ergométrico', tipo:'exame', especialidade:'Teste Ergométrico', andar:5 },
+  { id:'u06-s24', unidadeId:'u06', numero:'MAPA / HOLTER', nome:'Mapa / Holter', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u06-s25', unidadeId:'u06', numero:'RAIO X', nome:'Raio X', tipo:'exame', especialidade:'Diagnóstico por Imagem', andar:5 },
+];
+
+// ─── Salas reais – u08 UA Osasco ─────────────────────────────────────────────
+const SALAS_U08: Sala[] = [
+  { id:'u08-s01', unidadeId:'u08', numero:'1', nome:'Sala 1', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s02', unidadeId:'u08', numero:'2', nome:'Sala 2', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s03', unidadeId:'u08', numero:'3', nome:'Sala 3', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s04', unidadeId:'u08', numero:'4', nome:'Sala 4', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s05', unidadeId:'u08', numero:'5', nome:'Sala 5', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:1 },
+  { id:'u08-s06', unidadeId:'u08', numero:'6', nome:'Sala 6', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s07', unidadeId:'u08', numero:'7', nome:'Sala 7', tipo:'consultorio', especialidade:'Clínica Médica', andar:1 },
+  { id:'u08-s08', unidadeId:'u08', numero:'8', nome:'Sala 8', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:1 },
+  { id:'u08-s09', unidadeId:'u08', numero:'PEQ. CIRURGIA', nome:'Sala Pequena Cirurgia', tipo:'procedimento', especialidade:'Cirurgia Geral', andar:1 },
+  { id:'u08-s10', unidadeId:'u08', numero:'MAMOGRAFIA', nome:'Mamografia', tipo:'exame', especialidade:'Mamografia', andar:5 },
+  { id:'u08-s11', unidadeId:'u08', numero:'ULTRASSON', nome:'Ultrasson', tipo:'exame', especialidade:'Ultrassonografia', andar:5 },
+  { id:'u08-s12', unidadeId:'u08', numero:'TOMOGRAFIA', nome:'Tomografia', tipo:'exame', especialidade:'Tomografia', andar:5 },
+  { id:'u08-s13', unidadeId:'u08', numero:'ECOCARDIOGRAMA', nome:'Ecocardiograma', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u08-s14', unidadeId:'u08', numero:'TESTE ERGOMETRICO', nome:'Teste Ergométrico', tipo:'exame', especialidade:'Teste Ergométrico', andar:5 },
+  { id:'u08-s15', unidadeId:'u08', numero:'MAPA / HOLTER', nome:'Mapa / Holter', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u08-s16', unidadeId:'u08', numero:'RAIO X', nome:'Raio X', tipo:'exame', especialidade:'Diagnóstico por Imagem', andar:5 },
+];
+
+// ─── Salas reais – u10 UA Itaquaquecetuba ────────────────────────────────────
+const SALAS_U10: Sala[] = [
+  { id:'u10-s01', unidadeId:'u10', numero:'1', nome:'Sala 1', tipo:'consultorio', especialidade:'Oftalmologia', andar:0 },
+  { id:'u10-s02', unidadeId:'u10', numero:'6', nome:'Sala 6', tipo:'consultorio', especialidade:'Otorrinolaringologia', andar:0 },
+  { id:'u10-s03', unidadeId:'u10', numero:'7', nome:'Sala 7', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:0 },
+  { id:'u10-s04', unidadeId:'u10', numero:'8', nome:'Sala 8', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+];
+
+// ─── Salas reais – u11 UA Suzano ─────────────────────────────────────────────
+const SALAS_U11: Sala[] = [
+  { id:'u11-s01', unidadeId:'u11', numero:'1', nome:'Sala 1', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s02', unidadeId:'u11', numero:'2', nome:'Sala 2', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s03', unidadeId:'u11', numero:'3', nome:'Sala 3', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s04', unidadeId:'u11', numero:'4', nome:'Sala 4', tipo:'consultorio', especialidade:'Otorrinolaringologia', andar:0 },
+  { id:'u11-s05', unidadeId:'u11', numero:'5', nome:'Sala 5', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s06', unidadeId:'u11', numero:'8', nome:'Sala 8', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s07', unidadeId:'u11', numero:'9', nome:'Sala 9', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s08', unidadeId:'u11', numero:'10', nome:'Sala 10', tipo:'consultorio', especialidade:'Clínica Médica', andar:0 },
+  { id:'u11-s09', unidadeId:'u11', numero:'11', nome:'Sala 11', tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:0 },
+  { id:'u11-s10', unidadeId:'u11', numero:'MAMOGRAFIA', nome:'Mamografia', tipo:'exame', especialidade:'Mamografia', andar:5 },
+  { id:'u11-s11', unidadeId:'u11', numero:'ULTRASSON', nome:'Ultrasson', tipo:'exame', especialidade:'Ultrassonografia', andar:5 },
+  { id:'u11-s12', unidadeId:'u11', numero:'TOMOGRAFIA', nome:'Tomografia', tipo:'exame', especialidade:'Tomografia', andar:5 },
+  { id:'u11-s13', unidadeId:'u11', numero:'ECOCARDIOGRAMA', nome:'Ecocardiograma', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u11-s14', unidadeId:'u11', numero:'TESTE ERGOMETRICO', nome:'Teste Ergométrico', tipo:'exame', especialidade:'Teste Ergométrico', andar:5 },
+  { id:'u11-s15', unidadeId:'u11', numero:'MAPA / HOLTER', nome:'Mapa / Holter', tipo:'exame', especialidade:'Cardiologia', andar:5 },
+  { id:'u11-s16', unidadeId:'u11', numero:'RAIO X', nome:'Raio X', tipo:'exame', especialidade:'Diagnóstico por Imagem', andar:5 },
+];
+
 // ─── Gerador automático para unidades sem mapa real ──────────────────────────
 function gerarSalas(unidadeId: string, especialidades: string[]): Sala[] {
   const salas: Sala[] = [];
@@ -446,13 +567,18 @@ function gerarSalas(unidadeId: string, especialidades: string[]): Sala[] {
 export const TODAS_SALAS: Sala[] = [
   ...SALAS_U01,
   ...SALAS_U02,
+  ...SALAS_U03,
   ...SALAS_U04,
   ...SALAS_U05,
+  ...SALAS_U06,
   ...SALAS_U07,
+  ...SALAS_U08,
   ...SALAS_U09,
+  ...SALAS_U10,
+  ...SALAS_U11,
   ...SALAS_U12,
   ...UNIDADES
-    .filter((u) => !['u01','u02','u04','u05','u07','u09','u12'].includes(u.id))
+    .filter((u) => !['u01','u02','u03','u04','u05','u06','u07','u08','u09','u10','u11','u12'].includes(u.id))
     .flatMap((u) => gerarSalas(u.id, u.especialidades)),
 ];
 
