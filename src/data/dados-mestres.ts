@@ -47,8 +47,10 @@ export const UNIDADES: Unidade[] = [
     cidade: 'São Paulo', endereco: 'Av. Braz Leme, 1410 – Santana',
     telefone: '(11) 3001-0005', coordenador: 'Dra. Luciana Braga',
     cor: '#0369a1',
-    especialidades: ['Cardiologia','Clínica Médica','Dermatologia','Ginecologia e Obstetrícia',
-      'Neurologia','Oftalmologia','Ortopedia e Traumatologia','Pediatria'],
+    especialidades: ['Cardiologia','Cirurgia Vascular','Clínica Médica','Endocrinologia',
+      'Gastroenterologia','Geriatria','Ginecologia e Obstetrícia','Infectologia',
+      'Medicina de Família','Neurologia','Neuropediatria','Otorrinolaringologia',
+      'Pediatria','Pneumologia','Pneumologia Pediátrica','Psicologia','Reumatologia'],
   },
   {
     id: 'u06', nome: 'Arujá', sigla: 'ARJ',
@@ -83,8 +85,10 @@ export const UNIDADES: Unidade[] = [
     cidade: 'Suzano', endereco: 'Av. Paulo Portela, 1000 – Suzano',
     telefone: '(11) 4745-0009', coordenador: 'Dra. Elaine Duarte',
     cor: '#1d4ed8',
-    especialidades: ['Cardiologia','Clínica Médica','Dermatologia','Ginecologia e Obstetrícia',
-      'Neurologia','Ortopedia e Traumatologia','Pediatria'],
+    especialidades: ['Cardiologia','Cirurgia Vascular','Clínica Médica','Dermatologia',
+      'Diagnóstico por Imagem','Endocrinologia','Gastroenterologia','Geriatria',
+      'Ginecologia e Obstetrícia','Nutrição','Otorrinolaringologia','Pediatria',
+      'Psicologia','Psiquiatria','Urologia'],
   },
   {
     id: 'u10', nome: 'Cubatão', sigla: 'CBT',
@@ -100,8 +104,9 @@ export const UNIDADES: Unidade[] = [
     cidade: 'Itaquaquecetuba', endereco: 'Av. Pref. José Lima, 800 – Itaquaquecetuba',
     telefone: '(11) 4761-0011', coordenador: 'Dra. Cristiane Luz',
     cor: '#4c1d95',
-    especialidades: ['Cardiologia','Clínica Médica','Dermatologia','Ginecologia e Obstetrícia',
-      'Ortopedia e Traumatologia','Pediatria'],
+    especialidades: ['Cardiologia','Cirurgia de Cabeça e Pescoço','Cirurgia Geral',
+      'Clínica Médica','Dermatologia','Ginecologia e Obstetrícia','Oftalmologia',
+      'Otorrinolaringologia','Pediatria','Urologia'],
   },
   {
     id: 'u12', nome: 'João Dias', sigla: 'JDS',
@@ -526,6 +531,80 @@ const SALAS_U13: Sala[] = [
   { id:'u13-s31', unidadeId:'u13', numero:'315', nome:'Consultório 315 – Gineco / Psicologia',  tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:4 },
 ];
 
+// ─── Salas reais – u05 Santana ───────────────────────────────────────────────
+const SALAS_U05: Sala[] = [
+  // TÉRREO (andar 1) – consultórios genéricos
+  { id:'u05-s01', unidadeId:'u05', numero:'1',   nome:'Consultório 1',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s02', unidadeId:'u05', numero:'2',   nome:'Consultório 2',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s03', unidadeId:'u05', numero:'3',   nome:'Consultório 3',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s04', unidadeId:'u05', numero:'4',   nome:'Consultório 4',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s05', unidadeId:'u05', numero:'5',   nome:'Consultório 5',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s06', unidadeId:'u05', numero:'6',   nome:'Consultório 6',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s07', unidadeId:'u05', numero:'7',   nome:'Consultório 7',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s08', unidadeId:'u05', numero:'8',   nome:'Consultório 8',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s09', unidadeId:'u05', numero:'9',   nome:'Consultório 9',                               tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u05-s10', unidadeId:'u05', numero:'10',  nome:'Consultório 10',                              tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  // 1º ANDAR (andar 2)
+  { id:'u05-s11', unidadeId:'u05', numero:'101', nome:'Consultório Otorrinolaringologia',            tipo:'consultorio', especialidade:'Otorrinolaringologia',      andar:2 },
+  { id:'u05-s12', unidadeId:'u05', numero:'102', nome:'Consultório Cardiologia / Pneumologia',      tipo:'consultorio', especialidade:'Cardiologia',               andar:2 },
+  { id:'u05-s13', unidadeId:'u05', numero:'103', nome:'Consultório Cardiologia',                    tipo:'consultorio', especialidade:'Cardiologia',               andar:2 },
+  { id:'u05-s14', unidadeId:'u05', numero:'104', nome:'Consultório Ginecológico',                   tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u05-s15', unidadeId:'u05', numero:'105', nome:'Consultório Ginecológico / Endometriose',    tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:2 },
+  { id:'u05-s16', unidadeId:'u05', numero:'106', nome:'Consultório Endocrinologia / Neurologia',    tipo:'consultorio', especialidade:'Endocrinologia',            andar:2 },
+  // 2º ANDAR (andar 3)
+  { id:'u05-s17', unidadeId:'u05', numero:'201', nome:'Consultório Clínica Médica',                 tipo:'consultorio', especialidade:'Clínica Médica',            andar:3 },
+  { id:'u05-s18', unidadeId:'u05', numero:'202', nome:'Consultório Cardiologia',                    tipo:'consultorio', especialidade:'Cardiologia',               andar:3 },
+  { id:'u05-s19', unidadeId:'u05', numero:'203', nome:'Consultório Geriatria / Clínica Médica',     tipo:'consultorio', especialidade:'Geriatria',                 andar:3 },
+  { id:'u05-s20', unidadeId:'u05', numero:'204', nome:'Consultório Medicina de Família',            tipo:'consultorio', especialidade:'Medicina de Família',        andar:3 },
+  { id:'u05-s21', unidadeId:'u05', numero:'205', nome:'Sala de Curativos',                          tipo:'procedimento',especialidade:'Enfermagem',                andar:3 },
+  { id:'u05-s22', unidadeId:'u05', numero:'206', nome:'Consultório Reumatologia / Gastroenterologia', tipo:'consultorio', especialidade:'Reumatologia',            andar:3 },
+  { id:'u05-s23', unidadeId:'u05', numero:'207', nome:'Consultório Cardiologia / Cirurgia Vascular', tipo:'consultorio', especialidade:'Cardiologia',              andar:3 },
+  { id:'u05-s24', unidadeId:'u05', numero:'208', nome:'Ecocardiograma',                             tipo:'exame',       especialidade:'Cardiologia',               andar:3 },
+  { id:'u05-s25', unidadeId:'u05', numero:'209', nome:'Consultório Ginecológico / Med. Família',    tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:3 },
+  { id:'u05-s26', unidadeId:'u05', numero:'210', nome:'Consultório Geriatria / Endocrinologia',     tipo:'consultorio', especialidade:'Geriatria',                 andar:3 },
+  { id:'u05-s27', unidadeId:'u05', numero:'211', nome:'Consultório Ginecológico',                   tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:3 },
+  { id:'u05-s28', unidadeId:'u05', numero:'212', nome:'Consultório Ginecológico',                   tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:3 },
+  // 3º ANDAR (andar 4)
+  { id:'u05-s29', unidadeId:'u05', numero:'301', nome:'Consultório Pediatria',                      tipo:'consultorio', especialidade:'Pediatria',                 andar:4 },
+  { id:'u05-s30', unidadeId:'u05', numero:'302', nome:'Consultório Pediatria / Gastroenterologia',  tipo:'consultorio', especialidade:'Pediatria',                 andar:4 },
+  { id:'u05-s31', unidadeId:'u05', numero:'303', nome:'Consultório Pediatria / Pneumo. Pediátrica', tipo:'consultorio', especialidade:'Pediatria',                 andar:4 },
+  { id:'u05-s32', unidadeId:'u05', numero:'304', nome:'Consultório Psicologia / Pediatria',         tipo:'consultorio', especialidade:'Psicologia',                andar:4 },
+  { id:'u05-s33', unidadeId:'u05', numero:'305', nome:'Consultório Infectologia / Neuropediatria',  tipo:'consultorio', especialidade:'Infectologia',              andar:4 },
+  { id:'u05-s34', unidadeId:'u05', numero:'306', nome:'Consultório Otorrinolaringologia',           tipo:'consultorio', especialidade:'Otorrinolaringologia',      andar:4 },
+];
+
+// ─── Salas reais – u09 Suzano ─────────────────────────────────────────────────
+const SALAS_U09: Sala[] = [
+  // TÉRREO (andar 1)
+  { id:'u09-s01', unidadeId:'u09', numero:'1',   nome:'Consultório Psicologia / Urologia',          tipo:'consultorio', especialidade:'Psicologia',                andar:1 },
+  { id:'u09-s02', unidadeId:'u09', numero:'2',   nome:'Consultório Dermatologia',                   tipo:'consultorio', especialidade:'Dermatologia',              andar:1 },
+  { id:'u09-s03', unidadeId:'u09', numero:'3',   nome:'Consultório Geriatria / Endocrinologia',     tipo:'consultorio', especialidade:'Geriatria',                 andar:1 },
+  { id:'u09-s04', unidadeId:'u09', numero:'4',   nome:'Consultório Otorrinolaringologia',           tipo:'consultorio', especialidade:'Otorrinolaringologia',      andar:1 },
+  { id:'u09-s05', unidadeId:'u09', numero:'5',   nome:'Consultório Cardiologia / Pediatria',       tipo:'consultorio', especialidade:'Cardiologia',               andar:1 },
+  { id:'u09-s06', unidadeId:'u09', numero:'8',   nome:'Consultório Nutrição / Cirurgia Vascular',  tipo:'consultorio', especialidade:'Nutrição',                  andar:1 },
+  { id:'u09-s07', unidadeId:'u09', numero:'9',   nome:'Consultório Gastroenterologia / Endocrinologia', tipo:'consultorio', especialidade:'Gastroenterologia',   andar:1 },
+  { id:'u09-s08', unidadeId:'u09', numero:'10',  nome:'Consultório Clínica Médica / Psiquiatria',  tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u09-s09', unidadeId:'u09', numero:'11',  nome:'Consultório Ginecológico',                  tipo:'consultorio', especialidade:'Ginecologia e Obstetrícia', andar:1 },
+  // 1º ANDAR (andar 2) – Exames
+  { id:'u09-s10', unidadeId:'u09', numero:'EX1', nome:'Mamografia',                                tipo:'exame',       especialidade:'Diagnóstico por Imagem',    andar:2 },
+  { id:'u09-s11', unidadeId:'u09', numero:'EX2', nome:'Ultrassonografia',                          tipo:'exame',       especialidade:'Diagnóstico por Imagem',    andar:2 },
+  { id:'u09-s12', unidadeId:'u09', numero:'EX3', nome:'Tomografia',                                tipo:'exame',       especialidade:'Diagnóstico por Imagem',    andar:2 },
+  { id:'u09-s13', unidadeId:'u09', numero:'EX4', nome:'Ecocardiograma',                            tipo:'exame',       especialidade:'Cardiologia',               andar:2 },
+  { id:'u09-s14', unidadeId:'u09', numero:'EX5', nome:'Teste Ergométrico',                         tipo:'exame',       especialidade:'Cardiologia',               andar:2 },
+  { id:'u09-s15', unidadeId:'u09', numero:'EX6', nome:'MAPA / Holter',                             tipo:'exame',       especialidade:'Cardiologia',               andar:2 },
+  { id:'u09-s16', unidadeId:'u09', numero:'EX7', nome:'Raio X',                                    tipo:'exame',       especialidade:'Radiologia',                andar:2 },
+];
+
+// ─── Salas reais – u11 Itaquaquecetuba ────────────────────────────────────────
+const SALAS_U11: Sala[] = [
+  // TÉRREO (andar 1)
+  { id:'u11-s01', unidadeId:'u11', numero:'1', nome:'Consultório Oftalmológico',                    tipo:'consultorio', especialidade:'Oftalmologia',              andar:1 },
+  { id:'u11-s02', unidadeId:'u11', numero:'5', nome:'Consultório Pediatria / Dermatologia',         tipo:'consultorio', especialidade:'Pediatria',                 andar:1 },
+  { id:'u11-s03', unidadeId:'u11', numero:'6', nome:'Consultório Cirurgia Geral / Ginecológico',    tipo:'consultorio', especialidade:'Cirurgia Geral',            andar:1 },
+  { id:'u11-s04', unidadeId:'u11', numero:'7', nome:'Consultório Clínica Médica / Ginecológico',    tipo:'consultorio', especialidade:'Clínica Médica',            andar:1 },
+  { id:'u11-s05', unidadeId:'u11', numero:'8', nome:'Consultório Cirurgia Geral / Dermatologia',    tipo:'consultorio', especialidade:'Cirurgia Geral',            andar:1 },
+];
+
 // ─── Gerador automático para unidades sem mapa real ──────────────────────────
 function gerarSalas(unidadeId: string, especialidades: string[]): Sala[] {
   const salas: Sala[] = [];
@@ -583,15 +662,15 @@ export const TODAS_SALAS: Sala[] = [
   ...SALAS_U02,
   ...SALAS_U03,
   ...SALAS_U04,
+  ...SALAS_U05,
   ...SALAS_U06,
   ...SALAS_U07,
   ...SALAS_U08,
+  ...SALAS_U09,
   ...SALAS_U10,
+  ...SALAS_U11,
   ...SALAS_U12,
   ...SALAS_U13,
-  ...UNIDADES
-    .filter((u) => !['u01','u02','u03','u04','u06','u07','u08','u10','u12','u13'].includes(u.id))
-    .flatMap((u) => gerarSalas(u.id, u.especialidades)),
 ];
 
 // ─── Médicos ─────────────────────────────────────────────────────────────────
@@ -897,4 +976,62 @@ export const MEDICOS: Medico[] = [
   { id:'m276',nome:'Dra. Juliana Saab',                           crm:'CRM/SP 237404', especialidade:'Otorrinolaringologia',      turno:'tarde',    unidadesAtendimento:['u13'] },
   { id:'m277',nome:'Dra. Maria de Lourdes Silva',                 crm:'CRM/SP 237548', especialidade:'Mastologia',                turno:'manha',    unidadesAtendimento:['u13'] },
   { id:'m278',nome:'Dr. Leonardo Pires',                          crm:'CRM/SP 237692', especialidade:'Cirurgia Geral',            turno:'tarde',    unidadesAtendimento:['u13'] },
+
+  // ── u05 Santana ──────────────────────────────────────────────────────────────
+  { id:'m279',nome:'Dr. Ricardo Carvalho Alencar Junior',         crm:'CRM/SP 237836', especialidade:'Otorrinolaringologia',      turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m280',nome:'Dr. Ivo Marcondes',                           crm:'CRM/SP 237980', especialidade:'Cardiologia',               turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m281',nome:'Dra. Gisele de Campos',                       crm:'CRM/SP 238124', especialidade:'Ginecologia e Obstetrícia', turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m282',nome:'Dra. Maria Geralda',                          crm:'CRM/SP 238268', especialidade:'Endocrinologia',            turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m283',nome:'Dr. Marcos Henrique Morales',                 crm:'CRM/SP 238412', especialidade:'Neurologia',                turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m284',nome:'Dr. Fernando Lima Santos Barbosa',            crm:'CRM/SP 238556', especialidade:'Clínica Médica',            turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m285',nome:'Dr. Oscar Yoshinori Ikari',                   crm:'CRM/SP 238700', especialidade:'Cardiologia',               turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m286',nome:'Dra. Hania Caroline Baldresca',               crm:'CRM/SP 238844', especialidade:'Medicina de Família',       turno:'integral', unidadesAtendimento:['u05'] },
+  { id:'m287',nome:'Dra. Helida Rosana Ferreira Caldas',          crm:'CRM/SP 238988', especialidade:'Reumatologia',              turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m288',nome:'Dr. Edvaldo do Nascimento Barbosa',           crm:'CRM/SP 239132', especialidade:'Cardiologia',               turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m289',nome:'Dr. Marcelo Mereu',                           crm:'CRM/SP 239276', especialidade:'Cirurgia Vascular',         turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m290',nome:'Dra. Fabiana Calhes Baccelli',                crm:'CRM/SP 239420', especialidade:'Geriatria',                 turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m291',nome:'Dr. Diego Ferreira Lorena',                   crm:'CRM/SP 239564', especialidade:'Geriatria',                 turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m292',nome:'Dra. Giselda Tofoli',                         crm:'CRM/SP 239708', especialidade:'Ginecologia e Obstetrícia', turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m293',nome:'Dra. Anahy Makuska Oviedo',                   crm:'CRM/SP 239852', especialidade:'Ginecologia e Obstetrícia', turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m294',nome:'Dra. Eleise Silveira Emidio Maioli',          crm:'CRM/SP 239996', especialidade:'Pediatria',                 turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m295',nome:'Dra. Karen Cristina de Lima Nagahata',        crm:'CRM/SP 240140', especialidade:'Pediatria',                 turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m296',nome:'Dra. Adriana Hussein Abou Said',              crm:'CRM/SP 240284', especialidade:'Infectologia',              turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m297',nome:'Dr. Sergio Vranjac',                          crm:'CRM/SP 240428', especialidade:'Neuropediatria',            turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m298',nome:'Dr. Alberto Jorge de Faria',                  crm:'CRM/SP 240572', especialidade:'Gastroenterologia',         turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m299',nome:'Dra. Roxana Esther Espindola Plaza',          crm:'CRM/SP 240716', especialidade:'Pneumologia',               turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m300',nome:'Dr. Ying Siu Tung',                           crm:'CRM/SP 240860', especialidade:'Gastroenterologia',         turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m301',nome:'Dr. Euclydes Dias Buchler',                   crm:'CRM/SP 241004', especialidade:'Endocrinologia',            turno:'tarde',    unidadesAtendimento:['u05'] },
+  { id:'m302',nome:'Dra. Fatima Aparecida Fernandes Ribeiro',     crm:'CRM/SP 241148', especialidade:'Psicologia',                turno:'manha',    unidadesAtendimento:['u05'] },
+  { id:'m303',nome:'Dr. Gibraim Faccin Jankovski',                crm:'CRM/SP 241292', especialidade:'Pneumologia Pediátrica',    turno:'tarde',    unidadesAtendimento:['u05'] },
+
+  // ── u09 Suzano ───────────────────────────────────────────────────────────────
+  { id:'m304',nome:'Dra. Patricia Amado',                         crm:'CRM/SP 241436', especialidade:'Cardiologia',               turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m305',nome:'Dr. Matheus Cunha',                           crm:'CRM/SP 241580', especialidade:'Otorrinolaringologia',      turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m306',nome:'Dra. Karen Santos',                           crm:'CRM/SP 241724', especialidade:'Psicologia',                turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m307',nome:'Dra. Mariana Raze',                           crm:'CRM/SP 241868', especialidade:'Dermatologia',              turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m308',nome:'Dr. Alvaro Cabral',                           crm:'CRM/SP 242012', especialidade:'Endocrinologia',            turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m309',nome:'Dra. Giulliana Oliveira',                     crm:'CRM/SP 242156', especialidade:'Geriatria',                 turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m310',nome:'Dra. Ivonete Lima',                           crm:'CRM/SP 242300', especialidade:'Pediatria',                 turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m311',nome:'Dr. Sandro Ferreira',                         crm:'CRM/SP 242444', especialidade:'Pediatria',                 turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m312',nome:'Dr. Andre Carvalho',                          crm:'CRM/SP 242588', especialidade:'Cardiologia',               turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m313',nome:'Dr. Edson Katufumi Wai',                      crm:'CRM/SP 242732', especialidade:'Cirurgia Vascular',         turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m314',nome:'Dr. Erasmo Costa',                            crm:'CRM/SP 242876', especialidade:'Ginecologia e Obstetrícia', turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m315',nome:'Dra. Ana Carolina Mendes',                    crm:'CRM/SP 243020', especialidade:'Ginecologia e Obstetrícia', turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m316',nome:'Dr. Robson Luiz Campos',                      crm:'CRM/SP 243164', especialidade:'Cirurgia Geral',            turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m317',nome:'Dr. Vitor Mayer',                             crm:'CRM/SP 243308', especialidade:'Gastroenterologia',         turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m318',nome:'Dra. Grissel Hernandez',                      crm:'CRM/SP 243452', especialidade:'Gastroenterologia',         turno:'tarde',    unidadesAtendimento:['u09'] },
+  { id:'m319',nome:'Dra. Caroline Eugenio',                       crm:'CRM/SP 243596', especialidade:'Endocrinologia',            turno:'manha',    unidadesAtendimento:['u09'] },
+  { id:'m320',nome:'Dr. Sergio Rocha',                            crm:'CRM/SP 243740', especialidade:'Psiquiatria',               turno:'tarde',    unidadesAtendimento:['u09'] },
+
+  // ── u11 Itaquaquecetuba ───────────────────────────────────────────────────────
+  { id:'m321',nome:'Dra. Jeanette Ofelia Huertas Ângulo',         crm:'CRM/SP 243884', especialidade:'Oftalmologia',              turno:'integral', unidadesAtendimento:['u11'] },
+  { id:'m322',nome:'Dr. Paulo Mitigui Tibana',                    crm:'CRM/SP 244028', especialidade:'Pediatria',                 turno:'manha',    unidadesAtendimento:['u11'] },
+  { id:'m323',nome:'Dr. Nuno Miguel Esteves Gaiato',              crm:'CRM/SP 244172', especialidade:'Urologia',                  turno:'tarde',    unidadesAtendimento:['u11'] },
+  { id:'m324',nome:'Dr. Leonardo Carlos Figueiredo Reiser',       crm:'CRM/SP 244316', especialidade:'Cardiologia',               turno:'manha',    unidadesAtendimento:['u11'] },
+  { id:'m325',nome:'Dr. Rafael Martins de Oliveira',              crm:'CRM/SP 244460', especialidade:'Cirurgia Geral',            turno:'tarde',    unidadesAtendimento:['u11'] },
+  { id:'m326',nome:'Dr. Lucas Cunha Ferreira Castro Tolentino',   crm:'CRM/SP 244604', especialidade:'Otorrinolaringologia',      turno:'manha',    unidadesAtendimento:['u11'] },
+  { id:'m327',nome:'Dra. Marina Ramos da Silva Rocha',            crm:'CRM/SP 244748', especialidade:'Ginecologia e Obstetrícia', turno:'tarde',    unidadesAtendimento:['u11'] },
+  { id:'m328',nome:'Dra. Stephani Andreoni',                      crm:'CRM/SP 244892', especialidade:'Clínica Médica',            turno:'manha',    unidadesAtendimento:['u11'] },
+  { id:'m329',nome:'Dr. Charles Alfabet',                         crm:'CRM/SP 245036', especialidade:'Cirurgia Geral',            turno:'tarde',    unidadesAtendimento:['u11'] },
+  { id:'m330',nome:'Dr. Carlos Roberto Vissechi',                 crm:'CRM/SP 245180', especialidade:'Ginecologia e Obstetrícia', turno:'manha',    unidadesAtendimento:['u11'] },
 ];
