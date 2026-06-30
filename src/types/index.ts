@@ -36,6 +36,7 @@ export interface Medico {
   id: string;
   nome: string;
   crm: string;
+  telefone: string;
   especialidade: string;
   turno: TurnoMedico;
   unidadesAtendimento: string[];

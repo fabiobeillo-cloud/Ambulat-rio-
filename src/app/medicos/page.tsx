@@ -72,6 +72,10 @@ export default function MedicosPage() {
                 <span className="font-medium text-slate-700">{TURNO_LABEL[m.turno]}</span>
               </div>
               <div className="flex items-center justify-between text-xs">
+                <span className="text-slate-500">Telefone</span>
+                <span className="font-medium text-slate-700 font-mono">{m.telefone}</span>
+              </div>
+              <div className="flex items-center justify-between text-xs">
                 <span className="text-slate-500">Unidades</span>
                 <div className="flex gap-1 flex-wrap justify-end">
                   {m.unidadesAtendimento.map((uid) => {
