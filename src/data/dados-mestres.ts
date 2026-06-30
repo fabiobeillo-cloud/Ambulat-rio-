@@ -3,7 +3,7 @@ import type { Unidade, Medico, Sala } from '@/types';
 export const UNIDADES: Unidade[] = [
   {
     id: 'u01', nome: 'UA Luz Butantã', sigla: 'LBT',
-    cidade: 'São Paulo', endereco: 'R. Albuquerque Lins, 187 – Santa Cecília',
+    cidade: 'São Paulo', endereco: 'Av. Professor Francisco Morato, 719 – Butantã, São Paulo – SP, CEP 05513-000',
     telefone: '(11) 3825-0001', coordenador: 'Dra. Helena Vasconcelos',
     cor: '#1e40af',
     especialidades: ['Cardiologia', 'Cirurgia Pediátrica', 'Cirurgia Vascular', 'Clínica Médica', 'Endocrinologia', 'Endometriose Cirurgica', 'Fisioterapia', 'Fonoaudiologia', 'Gastroenterologia', 'Gastroenterologia Pediatrica', 'Geriatria', 'Ginecologia e Obstetrícia', 'Ginecologia/ Obstetricia', 'Implanon', 'Mamografia', 'Mastologia', 'Nefrologia', 'Neurologia', 'Nutrição', 'Obstetricia', 'Pediatra', 'Pediatria', 'Pequena Cirurgia', 'Pneumologia', 'Proctologia', 'Psicologia', 'Psicopedagogia', 'Reumatologia', 'Terapia Ocupacional', 'Teste Ergometrico', 'Tomografia', 'Ultrassonografia', 'Urologia'],
@@ -24,13 +24,13 @@ export const UNIDADES: Unidade[] = [
   },
   {
     id: 'u04', nome: 'AES Ana Rosa', sigla: 'ANR',
-    cidade: 'São Paulo', endereco: 'Av. Brigadeiro Luís Antônio, 4000 – Jardim Paulista',
+    cidade: 'São Paulo', endereco: 'Av. Conselheiro Rodrigues Alves, 180 – Vila Mariana, São Paulo – SP',
     telefone: '(11) 3887-0004', coordenador: 'Dra. Antônia Gomes',
     cor: '#b45309',
     especialidades: ['Cardiologia', 'Cirurgia Bucomaxilofacial', 'Cirurgia Geral', 'Cirurgia Pediátrica', 'Cirurgia Plástica', 'Cirurgia Vascular / Angiologia', 'Cirurgia de Cabeça e Pescoço', 'Clínica Médica', 'Dermatologia', 'Endocrinologia', 'Endocrinologia Pediátrica', 'Endometriose Cirurgica', 'Gastroenterologia', 'Gastroenterologia Pediatrica', 'Ginecologia e Obstetrícia', 'Hematologia', 'Histeroscopia', 'Infectologia', 'Mastologia', 'Nefrologia', 'Neurologia', 'Neurologia Nai', 'Nutrição', 'Obstetricia Alto Risco', 'Otorrinolaringologia', 'Pneumologia', 'Pneumologia Cronico-Nai', 'Proctologia', 'Psicologia Saúde Mental', 'Psiquiatria Saude Mental', 'Reumatologia', 'Reumatologia Nai', 'Urologia'],
   },
   {
-    id: 'u05', nome: 'Arujá Ipiranga 1', sigla: 'ARJ',
+    id: 'u05', nome: 'AES Ipiranga Arujá', sigla: 'ARJ',
     cidade: 'Arujá', endereco: 'R. Ipiranga, 1000 – Centro, Arujá',
     telefone: '(11) 4655-0005', coordenador: 'A confirmar',
     cor: '#0369a1',
@@ -58,7 +58,7 @@ export const UNIDADES: Unidade[] = [
     especialidades: ['Cardiologia', 'Cirurgia Geral', 'Cirurgia Plástica', 'Cirurgia Vascular', 'Cirurgia de Cabeça e Pescoço', 'Clínica Médica', 'Endocrinologia', 'Gastroenterologia', 'Ginecologia e Obstetrícia', 'Implante Contraceptivo', 'Neurologia', 'Ortopedia e Traumatologia', 'Otorrinolaringologia', 'Pediatria', 'Pequena Cirurgia', 'Reumatologia', 'Urologia'],
   },
   {
-    id: 'u09', nome: 'UA João Dias', sigla: 'JDI',
+    id: 'u09', nome: 'AES João Dias', sigla: 'JDI',
     cidade: 'São Paulo', endereco: 'R. João Dias – Santo Amaro, São Paulo',
     telefone: '(11) 5641-0009', coordenador: 'A confirmar',
     cor: '#1d4ed8',
