@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  LayoutDashboard, MapPin, Map, BarChart3, Stethoscope, Building2,
+  LayoutDashboard, MapPin, Map, ClipboardEdit, BarChart3, Stethoscope, Building2,
   ChevronRight, Activity
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -12,6 +12,7 @@ const MENU = [
   { href: '/',               label: 'Dashboard',          icon: LayoutDashboard },
   { href: '/locacao',        label: 'Locação de Médicos',  icon: MapPin },
   { href: '/mapa',           label: 'Mapa de Salas',       icon: Map },
+  { href: '/mapa-manual',    label: 'Mapa Manual',         icon: ClipboardEdit },
   { href: '/produtividade',  label: 'Produtividade',       icon: BarChart3 },
   { href: '/medicos',        label: 'Médicos',             icon: Stethoscope },
   { href: '/unidades',       label: 'Unidades',            icon: Building2 },

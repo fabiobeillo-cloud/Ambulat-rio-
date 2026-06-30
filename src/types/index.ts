@@ -103,6 +103,13 @@ export interface Alerta {
   timestamp: string;
 }
 
+export interface ManualSalaEstado {
+  status: StatusSala;
+  medicoId: string | null;
+  observacao: string;
+  atualizadoEm: string;
+}
+
 export interface DashboardKPIs {
   totalMedicosAtivos: number;
   totalMedicosProgramados: number;
