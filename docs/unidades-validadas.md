@@ -20,15 +20,20 @@ Legenda: ✅ confirmado · ⚠️ a validar · ❌ ausente no código
 | Butantã | UA Luz Butantã | ✅ confirmado 2026-11-24 | |
 | Arujá | AES Ipiranga Arujá | ✅ confirmado 2026-11-24 | Alto Tietê |
 | Guarulhos — unidade 1 | AES Guarulhos | ✅ confirmado 2026-11-24 | |
-| Guarulhos — unidade 2 | UA Carlos Chagas HCC | ✅ confirmado 2026-11-24 | |
-| UA Metropolitano | — | ❌ ausente no código | Confirmada no escopo (extra-grupo); dados a extrair do cofre |
-| — | UA Cubatão (Hospital da Luz) | ✅ confirmado 2026-11-24 | Confirmada no escopo; informado "também HCC" — ⚠️ confirmar o significado (unidade hospitalar/extra-hospitalar?) |
-| Santo Amaro | — | ⚠️ a validar | Consta no ciclo de visitas, mas não na matriz; não confirmado nesta data |
+| Guarulhos — unidade 2 | UA Carlos Chagas HCC | ✅ confirmado 2026-11-24 | **Extra-hospitalar** (Hospital Carlos Chagas), confirmado 2026-11-24 |
+| UA Metropolitano | — | ❌ ausente no código | Confirmada no escopo; **extra-hospitalar** (confirmado 2026-11-24); dados a extrair do cofre |
+| — | UA Cubatão (Hospital da Luz) | ✅ confirmado 2026-11-24 | Confirmada no escopo 2026-11-24 |
+| Santo Amaro | — | ❌ ausente no código | Unidade própria (confirmado 2026-11-24), distinta da AES João Dias; dados a extrair do cofre |
+
+## Decisões confirmadas em 2026-11-24
+
+- Escopo total: **15 unidades** (14 do ciclo de visitas + UA Cubatão).
+- Extra-hospitalares: **UA Metropolitano** e **Hospital Carlos Chagas (UA Carlos Chagas HCC)**.
+- Santo Amaro: unidade própria, distinta da AES João Dias.
+- Ausentes no código, a extrair do cofre: UA Metropolitano e Santo Amaro.
 
 ## Pendências de validação
 
-1. Santo Amaro: é unidade própria ou é a AES João Dias (endereço "R. João Dias – Santo Amaro")?
-2. Classificação "extra-hospitalar" e "HCC": quais unidades se enquadram (Carlos Chagas HCC, Cubatão, outras?).
-3. Contagens elevadas de médicos: UA Vitória (246) e AES Guarulhos (200) — verificar plantonistas/duplicidades na matriz original.
-4. Telefones de médicos no ramo `claude-md-docs-ifl1uu`: 757 fictícios misturados a 320 reais, alinhamento por posição; 31 números repetidos. Não usar até revalidar.
-5. Escopo total: com Cubatão, o escopo passa a 15 unidades (14 do ciclo + Cubatão)? Confirmar.
+1. Contagens elevadas de médicos: UA Vitória (246) e AES Guarulhos (200) — verificar plantonistas/duplicidades na matriz original.
+2. Telefones de médicos no ramo `claude-md-docs-ifl1uu`: 757 fictícios misturados a 320 reais, alinhamento por posição; 31 números repetidos. Não usar até revalidar.
+3. Regional de cada unidade (SP × Alto Tietê) para Cubatão, Carlos Chagas e Metropolitano.
